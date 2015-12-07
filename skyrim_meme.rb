@@ -1,5 +1,5 @@
 def valid_number?(cheese_number)
-	/^\d{0,4}$/ === cheese_number
+	/^\d{0,2}$/ === cheese_number
 end
 
 puts """
@@ -12,7 +12,7 @@ print "Enter your number of cheese wheels: "
 @cheese_meme = gets.chomp
 
 unless valid_number?(@cheese_meme)
-	puts "That is not a number, what are you trying to do?"
+	puts "That is either not a number or that is far too much cheese. What are you trying to do?"
 else
 	@cheese_number = @cheese_meme.to_i
 puts "...and then, sensing he was injured, the Dragonborn ate #{@cheese_meme} entire cheese wheels in the middle of battle."
